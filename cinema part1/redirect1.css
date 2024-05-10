@@ -1,0 +1,143 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.big{
+    margin-left: 500px;
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: url(images/cinema-img.jpeg) no-repeat center center/cover ;
+    color: #fff;
+    z-index: ;
+    
+}
+button{
+    margin-top: 20px;
+    font-size: 40px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 3;
+
+}
+button:hover{
+    background-color: grey;
+    z-index: 3;
+}
+#wrong{
+    color: #fff;
+    margin-top: 10px;
+    z-index: 3;
+
+}
+label{
+    margin-top: 20px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    z-index: 3;
+
+}
+input{
+    background-color: transparent;
+    color: #fff;
+    z-index: 3;
+    
+}
+
+    .lamp {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        margin: 0px auto;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform-origin: center top;
+        animation-timing-function: cubic-bezier(0.6, 0, 0.38, 1);
+        animation: move 5.1s infinite;
+      }
+      @keyframes move {
+        0% {
+          transform: rotate(50deg);
+        }
+        50% {
+          transform: rotate(-50deg);
+        }
+        100% {
+          transform: rotate(50deg);
+        }
+      }
+      .cable {
+        width: 8px;
+          height: 248px;
+          background-color: maroon;
+      }
+      .cover {
+        width: 200px;
+        height: 80px;
+        background: rgb(151, 149, 8);
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        position: relative;
+        z-index: 200;
+      }
+      .in-cover {
+        width: 100%;
+        max-width: 200px;
+        height: 20px;
+        border-radius: 100%;
+        background: rgb(233, 229, 23) ;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        margin: 0px auto;
+        bottom: -9px;
+        z-index: 100;
+      }
+      .in-cover .bulb {
+        width: 50px;
+       height: 50px;
+       background-color: yellow ;
+       border-radius: 50%;
+       position: absolute;
+       left: 0px;
+       right: 0px;
+       bottom: -20px;
+       margin: 0px auto;
+       box-shadow: 0 0 25px 7px rgb(242, 242, 8), 0 0 64px 47px rgb(241, 241, 12), 0px 0 30px 15px rgb(227, 227, 24);
+    }
+    .light {
+        width: 200px;
+      height: 0px;
+      border-bottom: 900px solid rgb(147, 137, 25);
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 280px;
+      margin: 0px auto;
+      border-radius: 90px 90px 0px 0px;
+    }
+    .letter{
+        background-color: #fff;
+        width: 200px;
+        height: 400px;
+        margin-top: 300px;
+        margin-left: 400px;
+            
+    }
